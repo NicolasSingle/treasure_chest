@@ -1,0 +1,35 @@
+{
+    "window.zoomLevel": 0,
+    "editor.fontSize": 16,
+    "editor.wordWrap": "on",
+    "workbench.colorTheme": "One Dark Pro",
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "editor.fontFamily": "'Fira Code', '黑体'",
+    // 是否连字 箭头=>  三等=== 二等== 
+    "editor.fontLigatures": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "prettier.tabWidth": 4,
+    "prettier.semi": false,
+    "prettier.singleQuote": true,
+    // vue中格式化html插件
+    "vetur.format.defaultFormatter.html": "js-beautify-html",
+    // vue中格式化js插件
+    "vetur.format.defaultFormatter.js": "prettier",
+    "vetur.format.defaultFormatterOptions": {
+        "js-beautify-html": {
+    // 对属性进行换行。
+    // - auto: 仅在超出行长度时才对属性进行换行。
+    // - force: 对除第一个属性外的其他每个属性进行换行。
+    // - force-aligned: 对除第一个属性外的其他每个属性进行换行，并保持对齐。
+    // - force-expand-multiline: 对每个属性进行换行。
+    // - aligned-multiple: 当超出折行长度时，将属性进行垂直对齐。
+            "wrap_attributes": "force-aligned",
+        }
+    },
+    // 格式化vue中js需要的tabSize
+    "vetur.format.options.tabSize": 4,
+    // 是否检测vue中的template
+    "vetur.validation.template": false,
+}
