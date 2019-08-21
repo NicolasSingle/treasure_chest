@@ -1,10 +1,11 @@
-// ÏŞÖÆinputÊäÈë¿òÖ»ÄÜÊäÈëÊı×Ö
+ï»¿ #### é™åˆ¶inputè¾“å…¥æ¡†åªèƒ½è¾“å…¥æ•°å­—
+```
 import Vue from 'vue';
 /**
  *
- * @param {element} el ±êÇ©
- * @param {object} binding ´«Èë²ÎÊı
- * @param {boolean} binding.limitLess100 ÊÇ·ñ¿ØÖÆĞ¡ÓÚ100
+ * @param {element} el æ ‡ç­¾
+ * @param {object} binding ä¼ å…¥å‚æ•°
+ * @param {boolean} binding.limitLess100 æ˜¯å¦æ§åˆ¶å°äº100
  * @param {*} vnode
  * @param {*} oldVnode
  */
@@ -34,3 +35,4 @@ Vue.directive('input-number', {
     bind: addEvent,
     update: addEvent
 });
+```
