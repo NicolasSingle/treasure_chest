@@ -70,3 +70,22 @@
         repo: git@[此处为你的服务器ip或域名]:/home/git/repos/blog.git
         branch: master
     ```
+    - package.json
+    ```
+    ...
+    "scripts": {
+        "start": "hexo clean && hexo g && hexo s",
+        "deploy": "hexo clean && hexo g -d"
+    }
+    ...
+    ```
+    - 运行命令
+    > // 一键发布(push代码)后, 配合服务器中git/hooks中的post-receive钩子(push操作完成时执行), 会直接把最新代码checkout到工作目录, 同时nginx中指向此目录即可实现
+    ```
+    // npm run start 当npm后命令为start时, 可省略run, 其他的都得有
+    npm start // 启动服务
+    npm run deploy // 自动发布
+    ```
+- Nginx配置
+```
+```
