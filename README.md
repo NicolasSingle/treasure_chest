@@ -1,2 +1,1 @@
-# treasure_chest
-vscode配置, git 等
+too young to feel this old
